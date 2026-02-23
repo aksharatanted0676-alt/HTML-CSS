@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notion Style Landing Page</title>
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+body {
+  height: 100vh;
+  background: linear-gradient(120deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.container {
+  width: 85%;
+  height: 80vh;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+  padding: 20px 40px;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h2 {
+  font-size: 22px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li {
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  color: black;
+}
+
+nav button {
+  padding: 8px 15px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+}
+
+
+.hero-text h1 {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.hero-text p {
+  color: gray;
+  margin: 20px 0;
+}
+
+
+.cta-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn-primary {
+  padding: 12px 20px;
+  background: #635dff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-secondary {
+  padding: 12px 20px;
+  background: transparent;
+  color: #635dff;
+  border: 2px solid #635dff;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+.trusted-text {
+  margin-top: 25px;
+  font-size: 14px;
+  color: gray;
+}
+
+.brands {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #444;
+}
+
+.brands span {
+  opacity: 0.7;
+}
+
+
+.hero-illustration img {
+  width: 420px;
+  max-width: 100%;
+  animation: float 4s ease-in-out infinite;
+}
+
+
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-text h1 {
+    font-size: 40px;
+  }
+  .cta-buttons {
+    justify-content: center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+
+  <nav>
+    <h2>Notion</h2>
+    <ul>
+      <li>Features</li>
+      <li>Pricing</li>
+      <li>Templates</li>
+      <li>Company</li>
+      <li>Blog</li>
+    </ul>
+    <button>Sign In</button>
+  </nav>
+
+
+  <div class="hero">
+
+
+    <div class="hero-text">
+      <h1>Build<br>something<br>beautiful.</h1>
+      <p>Notion helps you and your team get more done with less stress.</p>
+
+
+      <div class="cta-buttons">
+        <button class="btn-primary">Get Notion free</button>
+        <button class="btn-secondary">Request a demo</button>
+      </div>
+
+      
+      <p class="trusted-text">Trusted by teams at</p>
+      <div class="brands">
+        <span>Netflix</span>
+        <span>Amazon</span>
+        <span>Figma</span>
+      </div>
+    </div>
+
+    
+    <div class="hero-illustration">
+      <img src="illustration.jpg" alt="Hero Illustration">
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

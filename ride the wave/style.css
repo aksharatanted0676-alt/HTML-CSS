@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f2f7fb;
+}
+
+/* NAVBAR */
+.navbar {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    padding: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+/* HERO */
+.hero {
+    height: 75vh;   /* reduced from 90vh */
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                url("pic5.jpg") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 60px;
+}
+
+.hero p {
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #00bcd4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.about {
+    text-align: center;
+    padding: 40px 20px;  
+}
+
+.about h2 {
+    font-size: 32px;
+    color: #1e3c72;
+    margin-bottom: 15px;
+}
+
+.about p {
+    max-width: 650px;
+    margin: auto;
+    font-size: 17px;
+    color: #555;
+}
+
+/* COURSES */
+.courses {
+    text-align: center;
+    padding: 50px 20px; 
+}
+
+.courses h2 {
+    font-size: 32px;
+    color: #1e3c72;
+    margin-bottom: 30px;
+}
+
+.course-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    padding: 12px;
+    background: #f4f8fb;
+    color: #1e3c72;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.bottom-image {
+    height: 300px;   
+    background: url("pic6.jpg") center/cover no-repeat;
+}
+
+
+footer {
+    background: #1e3c72;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Akshara | Personal Website</title>
+
+<style>
+
+/* ===== Background Video ===== */
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -3;
+}
+
+/* Dark overlay */
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.35);
+    z-index: -2;
+}
+
+/* ===== Floating Particles ===== */
+.particles span {
+    position: fixed;
+    bottom: -50px;
+    width: 10px;
+    height: 10px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 50%;
+    animation: float 15s linear infinite;
+    z-index: -1;
+}
+
+.particles span:nth-child(1){ left:10%; animation-duration:12s;}
+.particles span:nth-child(2){ left:25%; animation-duration:18s;}
+.particles span:nth-child(3){ left:40%; animation-duration:10s;}
+.particles span:nth-child(4){ left:55%; animation-duration:14s;}
+.particles span:nth-child(5){ left:70%; animation-duration:20s;}
+.particles span:nth-child(6){ left:85%; animation-duration:16s;}
+
+@keyframes float {
+    0% { transform: translateY(0) scale(1); opacity:1; }
+    100% { transform: translateY(-110vh) scale(0.5); opacity:0; }
+}
+
+/* ===== Body ===== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ===== Glass Container ===== */
+.container {
+    backdrop-filter: blur(20px);
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 40px;
+    border-radius: 25px;
+    width: 85%;
+    max-width: 900px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+
+    /* Entry Animation */
+    animation: fadeUp 1.5s ease forwards;
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== Profile ===== */
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.profile-img:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Text */
+h1 { font-size: 36px; margin: 15px 0; }
+h2 { margin-top: 30px; }
+p { line-height: 1.6; }
+
+/* ===== Hobbies ===== */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hobby-item {
+    background: rgba(255,255,255,0.2);
+    margin: 12px auto;
+    padding: 12px;
+    border-radius: 15px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: 0.3s;
+}
+
+.hobby-item:hover {
+    background: rgba(255,255,255,0.35);
+    transform: scale(1.05);
+}
+
+.hobby-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* ===== Table ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid rgba(255,255,255,0.4);
+}
+
+th {
+    background: rgba(255,255,255,0.3);
+}
+
+tr:nth-child(even) {
+    background: rgba(255,255,255,0.15);
+}
+
+/* ===== Buttons ===== */
+.edu-buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.edu-btn {
+    padding: 12px 22px;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(135deg, #ff6ec4, #7873f5);
+    transition: 0.3s;
+}
+
+.edu-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.footer {
+    margin-top: 25px;
+    font-style: italic;
+}
+
+a { text-decoration: none; }
+
+</style>
+</head>
+
+<body>
+
+<!-- Background Video -->
+<video autoplay muted loop class="bg-video">
+    <source src="waterlily.mp4" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+<!-- Floating Particles -->
+<div class="particles">
+    <span></span><span></span><span></span>
+    <span></span><span></span><span></span>
+</div>
+
+<div class="container">
+
+<a href="https://www.linkedin.com/in/akshara-tanted-3aaab2387" target="_blank">
+<img src="me.jpeg" alt="Akshara" class="profile-img">
+</a>
+
+<h1>Hi, I'm Akshara 🌸</h1>
+
+<p>
+I am a student exploring the world of technology,
+growing step by step with creativity and consistency.
+</p>
+
+<h2>My Hobbies</h2>
+<ul>
+<li class="hobby-item"><img src="img1.jpeg" class="hobby-img"> 💃 Dancing</li>
+<li class="hobby-item"><img src="img2.jpeg" class="hobby-img"> 🎧 Listening to Music</li>
+<li class="hobby-item"><img src="img3.jpeg" class="hobby-img"> 💻 Learning New Technologies</li>
+<li class="hobby-item"><img src="img4.jpeg" class="hobby-img"> 📚 Reading & Self-Learning</li>
+<li class="hobby-item"><img src="img5.jpeg" class="hobby-img"> 🎨 Creative Designing</li>
+</ul>
+
+<h2>My Education</h2>
+<table>
+<tr><th>Level</th><th>Subjects</th></tr>
+<tr><td>10th</td><td>Mathematics, Science, English, Social Science, Hindi</td></tr>
+<tr><td>12th</td><td>Physics, Chemistry, Mathematics, English</td></tr>
+<tr><td>B.Tech</td><td>Programming, Data Structures, DBMS, OS, Web Dev</td></tr>
+</table>
+
+<h2>My Schools & College</h2>
+<div class="edu-buttons">
+<a href="https://stpaulujjain.com" target="_blank"><button class="edu-btn">🏫 10th School</button></a>
+<a href="https://www.modelschoolujjain.com" target="_blank"><button class="edu-btn">🏫 12th School</button></a>
+<a href="https://itmbtech.com" target="_blank"><button class="edu-btn">🎓 B.Tech College</button></a>
+</div>
+
+<h2>About My Journey</h2>
+<p>
+Like a water lily blooming on calm water,
+I believe in patient learning and consistent growth.
+</p>
+
+<div class="footer">
+🌼 Thank you for visiting 🌼
+</div>
+
+</div>
+
+</body>
+</html>
