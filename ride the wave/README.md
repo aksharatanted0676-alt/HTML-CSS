@@ -1,28 +1,64 @@
 # Ride The Wave Project
 
-## Folder Structure
-```
-ride the wave/
-  ├── pic2.jpg
-  ├── pic3.jpg
-  ├── pic4.jpg
-  ├── pic5.jpg
-  ├── pic6.jpg
-  ├── ride.html
-  └── style.css
-```
+🌊 WaveRiders Surf Academy Website
 
-## Features
-- Surf and wave-themed website
-- Adventure and sports content
-- Custom CSS styling
-- Image gallery showcase
-- Responsive design
+A modern and responsive surfing academy website built using HTML and CSS.
+This project showcases a clean landing page design for a surf school with a hero section, about section, course cards, and a footer.
 
-## Thank You
-Thank you for riding the wave with us!
 
----
-**Copyright © 2026 AKSHARA TANTED**
+📌 Features
 
-All rights reserved.
+🌊 Beautiful Hero Section with background image
+
+📖 About Us section
+
+🏄 Surfing Courses Section (Beginner, Intermediate, Pro)
+
+🖼️ Image Cards with clean layout
+
+📱 Responsive Design using Flexbox
+
+🎨 Gradient Navbar
+
+🔘 Call-to-Action Button
+
+
+🛠️ Built With
+
+HTML5
+
+CSS3
+
+Flexbox
+
+📂 Project Structure
+
+WaveRiders/
+
+│
+├── index.html
+
+├── style.css
+
+├── pic2.jpg
+
+├── pic3.jpg
+
+├── pic4.jpg
+
+├── pic5.jpg
+
+├── pic6.jpg
+
+└── README.md
+
+
+🚀 How to Run the Project
+
+Download or clone the repository
+
+Open the folder
+
+Double click on index.html
+
+Open in your browser
